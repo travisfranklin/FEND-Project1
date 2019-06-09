@@ -73,14 +73,7 @@ p {
 img {
 	max-height:200px;
 
-	/*Full width image with limited-width parent*/
-	width: 100vw;
- 	position: relative;
-	left: 50%;
-	right: 50%;
-	margin-left: -50vw;
-	margin-right: -50vw;
-	object-fit: cover;
+
 }
 
 figcaption {
@@ -104,10 +97,6 @@ figcaption {
 	-webkit-text-fill-color: transparent;
 }
 
-.project-wrapper {
-	display: flex;
-	max-width:100%;
-}
 
 .project {
 	margin:20px 0 40px 0;
@@ -185,10 +174,23 @@ figcaption {
 
 /* RESPONSIVE */
 
+@media screen and (max-width: 459px) {
+	img {
+		width: 100vw;
+	 	position: relative;
+		left: 50%;
+		right: 50%;
+		margin-left: -50vw;
+		margin-right: -50vw;
+		object-fit: cover;
+	}
+}
+
 @media screen and (min-width: 460px) {
 	
 	img {
 		max-width: 350px;
+		width: 100%;
 		left: auto;
 		right: auto;
 		margin: auto;
@@ -200,18 +202,19 @@ figcaption {
 	}
 
 	.project-wrapper {	
-		margin:auto;
-		flex-flow: row wrap;
-		justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+	}
+	
+	.project-wrapper>* {
+		flex: 1 1 140px;
 	}
 
 	.project {
-		max-width: 350px;
-		margin-right:20px;
+		/*max-width: 350px;*/
+		margin-right:10px;
+		margin-left:10px;
 		flex-grow: 1;
 		flex-shrink: auto;
 	}
-	
-
-
 }
