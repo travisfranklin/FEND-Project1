@@ -211,10 +211,19 @@ figcaption {
 	}
 
 	.project {
-		/*max-width: 350px;*/
 		margin-right:10px;
 		margin-left:10px;
 		flex-grow: 1;
 		flex-shrink: auto;
+	}
+
+	.project:first-child {
+		margin-right:0px;
+		margin-left:0px;
+	}
+
+	.project:last-child {
+		margin-right:0px;
+		margin-left:0px;
 	}
 }
