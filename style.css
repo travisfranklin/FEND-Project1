@@ -72,8 +72,7 @@ p {
 
 img {
 	max-height:200px;
-
-
+	object-fit: cover;
 }
 
 figcaption {
@@ -99,7 +98,7 @@ figcaption {
 
 
 .project {
-	margin:20px 0 40px 0;
+	margin:20px 0 20px 0;
 }
 
 .site-title {
@@ -182,14 +181,12 @@ figcaption {
 		right: 50%;
 		margin-left: -50vw;
 		margin-right: -50vw;
-		object-fit: cover;
 	}
 }
 
 @media screen and (min-width: 460px) {
 	
 	img {
-		max-width: 350px;
 		width: 100%;
 		left: auto;
 		right: auto;
@@ -223,7 +220,8 @@ figcaption {
 	}
 
 	.project:last-child {
-		margin-right:0px;
-		margin-left:0px;
+		margin-right: 0px;
+		margin-left: 0px;
+		flex-shrink: 99999;
 	}
 }
