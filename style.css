@@ -25,6 +25,7 @@ body {
 
 main {
 	margin:0px 30px;
+	max-width:900px;
 }
 
 a {
@@ -71,9 +72,10 @@ p {
 }
 
 img {
-	max-height:200px;
-	object-fit: cover;
+	border-radius:2px 2px 0 0;
 }
+
+
 
 figcaption {
 	font-size:14px;
@@ -98,7 +100,7 @@ figcaption {
 
 
 .project {
-	margin:20px 0 20px 0;
+	margin: 20px 0 20px 0;
 }
 
 .site-title {
@@ -182,6 +184,21 @@ figcaption {
 		margin-left: -50vw;
 		margin-right: -50vw;
 	}
+
+	picture::after {
+		display: block;
+		position: relative;
+		left: 50%;
+		right: 50%;
+		width: 100vw;
+		height: 2px;
+		margin-left: -50vw;
+		margin-right: -50vw;
+		margin-top: -6px;
+		margin-bottom: 15px;
+		background-image: linear-gradient(135deg, rgb(70,159,219) 0%,rgb(117,125,198) 47%,rgb(89,81,198) 100%);
+		content: '';				
+	}
 }
 
 @media screen and (min-width: 460px) {
@@ -193,6 +210,17 @@ figcaption {
 		margin: auto;
 	}
 
+	picture::after {
+		display: block;
+		position: relative;
+		width: 100%;
+		height: 2px;
+		margin-top: -6px;
+		margin-bottom: 15px;
+		background-image: linear-gradient(135deg, rgb(70,159,219) 0%,rgb(117,125,198) 47%,rgb(89,81,198) 100%);
+		content:'';
+	}
+
 	.hero {
 		width: 75%;
 		padding-bottom: 75%;
@@ -201,27 +229,69 @@ figcaption {
 	.project-wrapper {	
         display: flex;
         flex-wrap: wrap;
+		margin: 0 -20px;
+
 	}
 	
 	.project-wrapper>* {
-		flex: 1 1 140px;
+		flex: 1 1 50%;
+		margin: 20px 0;
+		padding-right:20px;
+		padding-left:20px;
 	}
 
-	.project {
-		margin-right:10px;
-		margin-left:10px;
-		flex-grow: 1;
-		flex-shrink: auto;
+	.project:last-child
+	.project:nth-last-child(odd) {
+		height:350px;
 	}
 
-	.project:first-child {
-		margin-right:0px;
-		margin-left:0px;
+}
+
+@media screen and (min-width: 700px) {
+	
+	#bio {
+		max-width:400px;
 	}
 
-	.project:last-child {
-		margin-right: 0px;
-		margin-left: 0px;
-		flex-shrink: 99999;
+	.hero {
+		width: 65%;
+		padding-bottom: 65%;
 	}
+
+	.project-wrapper>* {
+		flex: 1 1 50%;
+	}
+
+@media screen and (min-width: 900px) {
+	
+	main {
+		max-width:900px;
+		margin:0 auto;
+
+	}
+
+	.site-title {
+		font-size: 72px;
+		letter-spacing: -1px;
+		line-height: 67px;
+		margin: 220px 0 0 0;
+	}
+
+	.hero {
+		position: relative;
+		width: 585px;
+		padding-bottom: 585px;
+		float: right;
+		height: 0;
+		overflow: visible;
+	}
+
+	
+	.project-wrapper>* {
+		flex: 1 1 50%;
+
+	}
+	
+
+
 }
