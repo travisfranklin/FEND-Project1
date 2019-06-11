@@ -20,13 +20,13 @@ _Check out the W3C documentation on HTML Structural Elements to learn more!_
 
 **Provide at least one of the following customizations:**
 
-[checkbox:checked] Customize images and text.
+- [x] Customize images and text.
 
-[checkbox:checked] Customize placement of the elements on the page (grid layout) with HTML, CSS or both.
+- [x] Customize placement of the elements on the page (grid layout) with HTML, CSS or both.
 
-[checkbox:checked] Customize CSS styles applied at minimum to paragraph and heading elements.
+- [x] Customize CSS styles applied at minimum to paragraph and heading elements.
 
-[checkbox:checked] Grid-Based Layout
+- [x] Grid-Based Layout
 
 Page utilizes a grid-based layout with styles making use of the **Flexbox** layout or a framework like **Bootstrap**, **Foundation**, etc.
 
