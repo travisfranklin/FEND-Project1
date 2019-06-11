@@ -10,9 +10,9 @@ html {
 
 body, header, footer, section, div, table {
 	font-family: helvetica, arial, "sans serif";
-	font-size:16px;
-	line-height:1.3em;
-	font-weight:400; 
+	font-size: 16px;
+	line-height: 1.3;
+	font-weight: 400; 
 	color: #ccc;
 } 
 
@@ -155,7 +155,7 @@ figcaption {
 
 .hero-img {
 	vertical-align:middle;
-	background: linear-gradient(135deg, rgba(70,159,219,.8) 0%,rgba(117,125,198,.8) 47%,rgba(89,81,198,.8) 100%), url("me.jpeg") center center/cover no-repeat;
+	background: linear-gradient(135deg, rgba(70,159,219,.8) 0%,rgba(117,125,198,.8) 47%,rgba(89,81,198,.8) 100%), url("me.jpg") center center/cover no-repeat;
 	width:100%;
 	padding-bottom:100%;
 	border-radius: 999px;
@@ -189,6 +189,7 @@ figcaption {
 		margin-right: -50vw;
 	}
 
+	/* Add full-width gradient border to bottom of project images */
 	picture::after {
 		display: block;
 		position: relative;
@@ -214,6 +215,7 @@ figcaption {
 		margin: auto;
 	}
 
+	/* Add gradient border to bottom of project images */
 	picture::after {
 		display: block;
 		position: relative;
@@ -233,6 +235,8 @@ figcaption {
 	.project-wrapper {	
         display: flex;
         flex-wrap: wrap;
+
+        /* To allow padding between projects while keeping site margins flush */
 		margin: 0 -20px;
 
 	}
@@ -240,21 +244,20 @@ figcaption {
 	.project-wrapper>* {
 		flex: 1 1 50%;
 		margin: 20px 0;
+
+		/* Padding matches -20 margin on .project-wrapper to keep site margins flush */
 		padding-right:20px;
 		padding-left:20px;
 	}
 
-	.project:last-child
-	.project:nth-last-child(odd) {
-		height:350px;
-	}
 
 }
 
 @media screen and (min-width: 700px) {
 	
 	#bio {
-		max-width:400px;
+		/* make room for hero */
+		max-width:370px;
 	}
 
 	.hero {
@@ -271,7 +274,12 @@ figcaption {
 	main {
 		max-width:900px;
 		margin:0 auto;
+	}
 
+	figcaption {
+		font-size: 18px;
+		line-height: 1.25;
+		font-weight: 400;
 	}
 
 	.site-title {
@@ -293,10 +301,8 @@ figcaption {
 	
 	.project-wrapper>* {
 		flex: 1 1 50%;
-
 	}
 	
-
 
 }
 
