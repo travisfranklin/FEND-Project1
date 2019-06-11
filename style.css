@@ -24,11 +24,11 @@ body {
 	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
-	margin: 0px;
+	margin: 0;
 }
 
 main {
-	margin: 0px 30px;
+	margin: 0 30px;
 	max-width: 900px;
 }
 
@@ -40,11 +40,12 @@ a {
 }
 
 a:hover {
-	color: rgba(70,159,219,1);
+	color: rgb(70,159,219);
 	text-decoration: none;
-	transform: translate(0, -4px);
-	-webkit-transform: translate(0, -4px);
 	-moz-transform: translate(0, -4px);
+	-webkit-transform: translate(0, -4px);
+	transform: translate(0, -4px);
+
 }
 
 ul {
@@ -81,8 +82,12 @@ p {
 	margin: 50px 0 10px;
 
 	/*Gradient text*/
+	background: -moz-linear-gradient(135deg, rgb(70,159,219) 0%,rgb(117,125,198) 47%,rgb(89,81,198) 100%);
 	background: -webkit-linear-gradient(135deg, rgb(70,159,219) 0%,rgb(117,125,198) 47%,rgb(89,81,198) 100%);
+	background: linear-gradient(135deg, rgb(70,159,219) 0%,rgb(117,125,198) 47%,rgb(89,81,198) 100%);
+	-moz-background-clip: text;
 	-webkit-background-clip: text;
+	-moz-text-fill-color: transparent;
 	-webkit-text-fill-color: transparent;
 }
 
@@ -96,7 +101,7 @@ p {
 
 .links {
 	display: block;
-	margin-left: 0px;
+	margin-left: 0;
 }
 
 .main {
@@ -119,10 +124,12 @@ p {
 	height: 100%;
 	padding: 2px;
 	position: absolute;
+	background: -moz-linear-gradient(135deg, rgba(70,159,219,1) 0%,rgba(117,125,198,1) 47%,rgba(89,81,198,1) 100%);
+	background: -webkit-linear-gradient(135deg, rgba(70,159,219,1) 0%,rgba(117,125,198,1) 47%,rgba(89,81,198,1) 100%);
 	background: linear-gradient(135deg, rgba(70,159,219,1) 0%,rgba(117,125,198,1) 47%,rgba(89,81,198,1) 100%);
-	border-radius: 9999px;
-	-webkit-border-radius: 9999px;
 	-moz-border-radius: 9999px;
+	-webkit-border-radius: 9999px;
+	border-radius: 9999px;
 	float: right;
 	right: -57px;
 	top: -57px;
@@ -131,18 +138,21 @@ p {
 .hero-img-pad {
 	background: #22222f;
 	padding: 20px;
-	border-radius: 9999px;
-	-webkit-border-radius: 9999px;
 	-moz-border-radius: 9999px;
+	-webkit-border-radius: 9999px;
+	border-radius: 9999px;
 }
 
 .hero-img {
+	background: -moz-linear-gradient(135deg, rgba(70,159,219,.8) 0%,rgba(117,125,198,.8) 47%,rgba(89,81,198,.8) 100%), url("me.jpg") center center/cover no-repeat;
+	background: -webkit-linear-gradient(135deg, rgba(70,159,219,.8) 0%,rgba(117,125,198,.8) 47%,rgba(89,81,198,.8) 100%), url("me.jpg") center center/cover no-repeat;
 	background: linear-gradient(135deg, rgba(70,159,219,.8) 0%,rgba(117,125,198,.8) 47%,rgba(89,81,198,.8) 100%), url("me.jpg") center center/cover no-repeat;
 	width: 100%;
 	padding-bottom: 100%;
-	border-radius: 9999px;
-	-webkit-border-radius: 9999px;
 	-moz-border-radius: 9999px;
+	-webkit-border-radius: 9999px;
+	border-radius: 9999px;
+		
 }
 
 .project {
@@ -196,7 +206,10 @@ p {
 		margin-right: -50vw;
 		margin-top: -6px;
 		margin-bottom: 15px;
+		background-image: -moz-linear-gradient(135deg, rgb(70,159,219) 0%, rgb(117,125,198) 47%, rgb(89,81,198) 100%);
+		background-image: -webkit-linear-gradient(135deg, rgb(70,159,219) 0%, rgb(117,125,198) 47%, rgb(89,81,198) 100%);
 		background-image: linear-gradient(135deg, rgb(70,159,219) 0%, rgb(117,125,198) 47%, rgb(89,81,198) 100%);
+
 		content: '';				
 	}
 }
@@ -208,9 +221,10 @@ p {
 		left: auto;
 		right: auto;
 		margin: auto;
-		border-radius: 2px 2px 0 0;
-		-webkit-border-radius: 2px 2px 0 0;
 		-moz-border-radius: 2px 2px 0 0;
+		-webkit-border-radius: 2px 2px 0 0;
+		border-radius: 2px 2px 0 0;
+
 	}
 
 	/* Add gradient border to bottom of project images */
@@ -221,7 +235,9 @@ p {
 		height: 2px;
 		margin-top: -6px;
 		margin-bottom: 15px;
-		background-image: linear-gradient(135deg, rgb(70,159,219) 0%,rgb(117,125,198) 47%,rgb(89,81,198) 100%);
+		background-image: -moz-linear-gradient(135deg, rgb(70,159,219) 0%, rgb(117,125,198) 47%, rgb(89,81,198) 100%);
+		background-image: -webkit-linear-gradient(135deg, rgb(70,159,219) 0%, rgb(117,125,198) 47%, rgb(89,81,198) 100%);
+		background-image: linear-gradient(135deg, rgb(70,159,219) 0%, rgb(117,125,198) 47%, rgb(89,81,198) 100%);
 		content:'';
 	}
 
@@ -239,7 +255,7 @@ p {
 
 	}
 
-	.project-wrapper>* {
+	.project {
 		flex: 1 1 50%;
 		margin: 20px 0;
 
@@ -262,7 +278,7 @@ p {
 		padding-bottom: 65%;
 	}
 
-	.project-wrapper>* {
+	.project {
 		flex: 1 1 50%;
 	}
 
@@ -295,7 +311,7 @@ p {
 		overflow: hidden;
 	}
 	
-	.project-wrapper>* {
+	.project {
 		flex: 1 1 50%;
 	}
 
@@ -312,4 +328,4 @@ p {
 		overflow: visible;
 	}	
 
-	}
+}
