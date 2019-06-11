@@ -19,7 +19,7 @@ body, header, footer, section, div, table {
 body {
 	width: 100%;
 	height: 100vh;
-	background: #22222f url(../img/bganim.svg);
+	background: #22222f url(bganim.svg);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -144,9 +144,9 @@ p {
 }
 
 .hero-img {
-	background: -moz-linear-gradient(135deg, rgba(70,159,219,.8) 0%,rgba(117,125,198,.8) 47%,rgba(89,81,198,.8) 100%), url("../img/me.jpg") center center/cover no-repeat;
-	background: -webkit-linear-gradient(135deg, rgba(70,159,219,.8) 0%,rgba(117,125,198,.8) 47%,rgba(89,81,198,.8) 100%), url("../img/me.jpg") center center/cover no-repeat;
-	background: linear-gradient(135deg, rgba(70,159,219,.8) 0%,rgba(117,125,198,.8) 47%,rgba(89,81,198,.8) 100%), url("../img/me.jpg") center center/cover no-repeat;
+	background: -moz-linear-gradient(135deg, rgba(70,159,219,.8) 0%,rgba(117,125,198,.8) 47%,rgba(89,81,198,.8) 100%), url("me.jpg") center center/cover no-repeat;
+	background: -webkit-linear-gradient(135deg, rgba(70,159,219,.8) 0%,rgba(117,125,198,.8) 47%,rgba(89,81,198,.8) 100%), url("me.jpg") center center/cover no-repeat;
+	background: linear-gradient(135deg, rgba(70,159,219,.8) 0%,rgba(117,125,198,.8) 47%,rgba(89,81,198,.8) 100%), url("me.jpg") center center/cover no-repeat;
 	width: 100%;
 	padding-bottom: 100%;
 	-moz-border-radius: 9999px;
